@@ -19,7 +19,7 @@ public class PaymentService {
                 return paymentRespository.save(payment);
         }
 
-        public org.nacha.domain.Payment getPaymentById(Long id) {
-                return (org.nacha.domain.Payment) paymentRespository.findById(id);
+        public Object getPaymentById(Long id) {
+                return paymentRespository.findById(id);
         }
 }

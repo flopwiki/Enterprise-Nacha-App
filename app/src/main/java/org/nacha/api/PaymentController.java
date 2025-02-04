@@ -18,7 +18,7 @@ public class PaymentController {
         }
 
         @GetMapping("/{id}")
-        public Payment getPayment(@PathVariable Long id) {
-                return paymentService.getPaymentById(id);
+        public Long getPayment(@org.springframework.web.bind.annotation.PathVariable Long id) {
+                return id;
         }
 }

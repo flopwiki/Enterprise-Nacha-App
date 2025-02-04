@@ -22,10 +22,16 @@ public class Payment {
         private String paymentId;
         private Long id;
 
+        public Long getPaymentById(Long id) {
+                return this.id;
+        }
+
 
         public void showBanner() {
                 System.out.println("Welcome to Nacha");
         }
 
         public void setStatus(String processed) {}
+
+
 }

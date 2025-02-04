@@ -23,7 +23,7 @@ public class SecurityConfig {
                                 .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")
                                 .anyRequest().authenticated());
 
-                
+
                 return http.build();
         }
 }
