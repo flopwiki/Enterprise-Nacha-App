@@ -3,10 +3,9 @@
  */
 package org.nacha;
 
-import  org.nacha.domain.Payments;
 public class App {
     public static void main(String[] args) {
-        Payments p1 = new Payments();
+        org.nacha.domain.Payment p1 = new org.nacha.domain.Payment();
         p1.showBanner();
     }
 }

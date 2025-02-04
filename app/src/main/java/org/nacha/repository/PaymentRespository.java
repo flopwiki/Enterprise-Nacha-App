@@ -1,9 +1,7 @@
 package org.nacha.repository;
 
-import org.nacha.domain.Payments;
-
 public class PaymentRespository {
-        public org.nacha.domain.Payments save(org.nacha.domain.Payments payment) {
+        public org.nacha.domain.Payment save(org.nacha.domain.Payment payment) {
 
                 return payment;
         }
