@@ -1,11 +1,11 @@
 package org.nacha.service;
 
 import org.nacha.domain.Payments;
+import org.nacha.repository.PaymentRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 // infra
 
-import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,6 +20,6 @@ public class PaymentService {
         }
 
         public Payments getPaymentById(Long id) {
-                return paymentRespository.findById(id).orElse(null);
+                return (org.nacha.domain.Payments) paymentRespository.findById(id);
         }
 }

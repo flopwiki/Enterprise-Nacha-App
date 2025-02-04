@@ -26,4 +26,6 @@ public class Payments {
         public void showBanner() {
                 System.out.println("Welcome to Nacha");
         }
+
+        public void setStatus(String processed) {}
 }
