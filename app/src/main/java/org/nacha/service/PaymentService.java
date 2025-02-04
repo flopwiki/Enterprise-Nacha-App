@@ -1,6 +1,6 @@
 package org.nacha.service;
 
-import org.nacha.repository.PaymentRespository;
+import org.nacha.infra.PaymentRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 // infra
