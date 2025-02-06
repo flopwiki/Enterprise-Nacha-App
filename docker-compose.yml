@@ -1,0 +1,29 @@
+version: '3'
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "3001:3000"
+    environment:
+      - DB_URL=mongodb://user-db:27017/users
+    depends_on:
+      - user-db
+
+  payment-service:
+    build: ./payment-service
+    ports:
+      - "3002:3000"
+    environment:
+      - DB_URL=mongodb://payment-db:27017/payments
+    depends_on:
+      - payment-db
+
+  user-db:
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  payment-db:
+    image: mongo
+    ports:
+      - "27018:27017"
