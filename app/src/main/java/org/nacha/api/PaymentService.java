@@ -1,6 +1,6 @@
-package org.nacha.service;
+package org.nacha.api;
 
-import org.nacha.infra.PaymentRespository;
+import org.nacha.infra.persistence.PaymentRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

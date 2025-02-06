@@ -1,7 +1,6 @@
 package org.nacha.api;
 
 import org.nacha.domain.Payment;
-import org.nacha.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

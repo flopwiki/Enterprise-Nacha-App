@@ -1,4 +1,4 @@
-package org.nacha.infra;
+package org.nacha.infra.persistence;
 
 import org.nacha.domain.Payment;
 import org.springframework.data.jpa.repository.JpaRepository;
