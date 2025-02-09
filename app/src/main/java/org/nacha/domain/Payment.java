@@ -7,9 +7,6 @@ import jakarta.persistence.Id;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-
-
-
 @Entity
 public class Payment {
         @Id
@@ -27,11 +24,12 @@ public class Payment {
         }
 
 
-        public void showBanner() {
-                System.out.println("Welcome to Nacha");
+        public String showBanner() {
+                return "Welcome to the NACHA Payment System";
         }
 
-        public void setStatus(String processed) {}
+        public void setStatus(String processed) {
+        }
 
 
 }
