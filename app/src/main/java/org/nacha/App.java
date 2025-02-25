@@ -3,6 +3,7 @@
  */
 package org.nacha;
 import org.nacha.api.PaymentController;
+import org.nacha.util.NACHAFormatter;
 
 public class App {
 
@@ -11,5 +12,11 @@ public class App {
         PaymentController p1 = new org.nacha.api.PaymentController();
         System.out.println(p1.getPayment(668_0763_053L));
 
+        NACHAFormatter n1 = new NACHAFormatter(6, 8, 1, 1091120L,
+                            900L, 900L);
+
+        String nachaFormat = n1.toNatchaString();
+
+        System.out.println(nachaFormat);
     }
 }

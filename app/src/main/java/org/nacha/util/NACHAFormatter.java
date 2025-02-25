@@ -14,9 +14,11 @@ public record NACHAFormatter(
 
         public String toNatchaString() {
                 return String.format(
-                        "%c%-6d%-6d%-8d%-10d%0" + DEBIT_CREDIT_AMOUNT_LENGTH + "d%0" + DEBIT_CREDIT_AMOUNT_LENGTH + "d",
+                        "%c%-6d%-6d%-8d%-10d%0" + DEBIT_CREDIT_AMOUNT_LENGTH +
+                                "d%0" + DEBIT_CREDIT_AMOUNT_LENGTH + "d",
                         RECORD_TYPE,
                         batchCount,
+                        blockCount,
                         entryAddendaCount,
                         entryHash,
                         totalDebitDollarAmount,
