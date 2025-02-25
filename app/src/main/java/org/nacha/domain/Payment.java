@@ -29,6 +29,7 @@ public class Payment {
         }
 
         public void setStatus(String processed) {
+               this.status = processed;
         }
 
 
